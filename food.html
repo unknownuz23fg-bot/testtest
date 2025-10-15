@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container { /* 이미지위에 텍스트 위치 설정*/
+  position: relative; /*릴레이티브는 대충 내 기준 위치 대충 정해도 됨,앱솔루트는 정확한 위치 기재해줘야됨*/
+  text-align: center;
+  color: white;
+    }
+    
+.centered { /*이미지 위 텍스트가 가운데에 위치함*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+  .logo {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+ }
+
+ 
+ p{
+ font-size:150px;
+ font-weight:500;
+ font-family:'Noto Sans HK Black'
+}
+
+</style>
+<body>
+    <div class="container">
+  <img src ="subject/foodSumnail.jpg"  alt="Snow" style="width:100%;"> <!--alt는 alternative 텍스트 이미지가
+  보이지 않을때 대신 보여주는 역할을 함-->
+  <div class="centered"><p>~懂味兒~</p></div>
+  <div class="logo"><img src = " subject/foodicon.png"><b>懂味兒</b><small>-(맛잘알)상일동 맛집 소개 사이트!</small></div>
+  
+</div>
+</body>
+</html>
